@@ -1,0 +1,807 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FEFCFB;
+  height: 140vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  gap: 4px;
+  font-family: "Volkhov", serif;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+nav a:hover{
+  color:#ff5722;
+  transition: 0.5s;
+}
+.auth .login {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ff5722;
+  font-family: "Poppins", sans-serif;
+}
+.auth .login:hover{
+    color:burlywood;
+    transition: 0.6s; 
+}
+.auth .signup {
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  width:160px;
+  height: 50px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: 1px solid #ff5722;
+  color: #ff5722;
+}
+.auth .signup:hover{
+    background:#ff5722;
+    color: #F7F8FC;
+    transition: 0.4s;
+    font-family: "Poppins", sans-serif;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  margin-bottom: 55px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Volkhov", serif;
+}
+
+.hero-text span {
+  color: #ff5722;
+ font-family: "Volkhov", serif;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.btn {
+  padding: 12px 25px;
+  background: #ff5722;
+  color: #fff;
+  border: 1px solid #ff5722;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.btn:hover{
+background-color: #fff;
+color: #ff5722;
+transition: 0.5s;
+}
+.hero-image img {
+  width: 785px;
+  height: 585;
+  margin-bottom: 170px;
+}
+header {
+  position: relative;
+}
+
+.search-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom:-230px ;
+  transform: translateX(-55%);
+  z-index: 10;
+  margin-bottom: -10px;
+  font-family: "Poppins", sans-serif;
+  width: 841px;
+  height: 124px;
+}
+
+.search-box {
+  background: #fff;
+  padding: 20px 60px;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  justify-content: space-between;
+  color: #222222;
+}
+
+.search-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-item .title {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-item .sub {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.btn-explore {
+  background: #ff6b3d;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.btn-explore:hover {
+  background:burlywood;
+  color: #ff5722;
+}
+.travel-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #F7F8FC;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-wrapper {
+    display: inline-flex; 
+    align-items: center;
+    position: relative; 
+}
+
+.header-wrapper h2 {
+    margin: 0;
+    color: #1a1a1a;
+    margin-bottom: -86px;
+    margin-left: 100px;
+    font-size: 48px;
+    font-family: "Volkhov", serif;
+
+}
+
+.header-wrapper h2 span {
+    color: #ff7c48; 
+    font-family: "Volkhov", serif;
+}
+
+.planes-icon {
+    width: 100px;
+    height: auto;
+   padding-bottom: 30px;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #F7F8FC;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    transition: transform 0.3s;
+    text-align: left;
+    
+}
+
+.pl{
+  width: 179.9px;
+  height: 130px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card p {
+    color: #777;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.deals-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+    font-family: "Volkhov", sans-serif;
+
+}
+
+.header-content h1 span {
+    color: #fa7436; 
+    font-family: "Volkhov", sans-serif;
+}
+
+.header-content p {
+    color: #666;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.travel-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.travel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(250, 116, 54, 0.1);
+}
+.image-box {
+    position: relative;
+    height: 280px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.travel-card:hover .image-box img {
+    transform: scale(1.1);
+}
+.book-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fa7436;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    opacity: 0; 
+    transition: all 0.3s ease;
+}
+.travel-card:hover .book-btn, 
+.book-btn.visible .book-btn { 
+    opacity: 1;
+}
+.card-info {
+    padding: 20px;
+    text-align: left;
+}
+.info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.info-top h3 {
+    color: #2d2d2d;
+    font-family: "Poppins", sans-serif;
+}
+.rating {
+    font-size:18px ;
+    color: #666;
+    font-weight: 400;
+}
+.country {
+    color: #888;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.price-box {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.new-price {
+    color: #fa7436;
+    background: #fff5f0;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.travel-plans {
+  padding: 60px 0;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top:40px;
+}
+
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  color: #222;
+  font-weight: bold;
+  font-family: "Volkhov", sans-serif;
+}
+
+.orange-text {
+  color: #fa7436;
+font-family: "Volkhov", sans-serif;  
+}
+
+.section-header p {
+  color: #666;
+  max-width: 450px;
+  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+}
+.trips-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trip-card {
+  background: #fff;
+  width: 330px;
+  border-radius: 25px; 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-10px);
+}
+
+.photo-box {
+  width: 100%;
+  height: 250px; 
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50px;
+}
+.trip-info {
+  padding: 20px;
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.row-top h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.price {
+  color: #fa7436;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 14px;
+}
+
+.icon {
+  color: #fa7436;
+  font-style: normal;
+  margin-right: 5px;
+}
+.testimonial-section {
+    padding: 100px 10%;
+    background-color: #F7F8FC;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    color: #000000; 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: "Volkhov", serif;
+}
+.text-content span{
+  color: #fa7436;
+  font-family: "Volkhov", serif;
+}
+.text-content p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px; 
+    position: relative;
+}
+
+.user-avatar {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border-radius: 100000px;
+}
+
+.user-avatar img {
+    width: 70px;
+    height: 70px;
+}
+
+.feedback {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+.user-location {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}
+.al-hawi {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.unwan-al-blog {
+    font-size: 34px;
+    color: #2d2d2d;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-family: "Volkhov", sans-serif;
+}
+
+.unwan-al-blog span {
+    color: #f17a43; 
+    font-family: "Volkhov", sans-serif;
+}
+.shabakat-al-posts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kart-blog {
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    text-align: left;
+}
+.surat-al-maqal {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; 
+    border-radius: 15px; 
+    display: block;
+    margin-bottom: 20px;
+}
+.unwan-al-maqal {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    padding-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.al-tariq {
+    font-size: 13px;
+    color: #b0b0b0;
+    margin: 0;
+}
+.niqat-al-tanuql {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nuqta {
+    width: 8px;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: inline-block;
+}
+.footer-section {
+    position: relative;
+    padding: 0 10%;
+    margin-top: 100px;
+}
+.newsletter-card {
+    background-color: #fa743e;
+    border-radius: 20px;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+    box-shadow: 0 10px 30px rgba(250, 116, 62, 0.3);
+    width: 1170px;
+    height: 416px;
+}
+
+.newsletter-content h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+     gap: 40px;
+}
+
+.input-group {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 8px;
+}
+
+
+
+.input-with-icon i {
+    color: #999;
+    margin-right: 10px;
+}
+
+.input-with-icon input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    background-color: #fa743e;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    width: 132px;
+    height: 50px;
+}
+
+.subscribe-btn:hover {
+    background-color: #e65f2b;
+    
+}
+
+/* شبكة الفوتر */
+.footer-container {
+    padding-bottom: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.brand-col .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.brand-col p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    color: #666;
+    text-decoration: none;
+    margin-right: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.social-links a.active {
+    background-color: #fa743e;
+    color: white;
+}
+
+.footer-col h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #222;
+    
+}
+
+.footer-col ul {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fa743e;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #666;
+    font-family: "Poppins", sans-serif;
+}
+.boo{
+    font-family: "Poppins", sans-serif;
+}
+.emali{
+    gap: 5px;
+}
+.rrr{
+    font-family: "Poppins", sans-serif;
+}
